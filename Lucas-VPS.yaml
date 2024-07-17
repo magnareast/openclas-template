@@ -71,9 +71,9 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      - "[Hysteria2] 🇺🇸 US美国-Reality"
-      - "[Hysteria2] 🇺🇸 US美国-Hysteria2"      
-      - "[Hysteria2] 🇺🇸 US美国-Vmess"
+      - 🇺🇸 US美国-Reality
+      - 🇺🇸 US美国-Hysteria2      
+      - 🇺🇸 US美国-Vmess
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -86,9 +86,9 @@ proxy-groups:
     interval: 300
     tolerance: 30
     proxies:
-      - "[Hysteria2] 🇺🇸 US美国-Reality"
-      - "[Hysteria2] 🇺🇸 US美国-Hysteria2"      
-      - "[Hysteria2] 🇺🇸 US美国-Vmess"
+      - 🇺🇸 US美国-Reality
+      - 🇺🇸 US美国-Hysteria2      
+      - 🇺🇸 US美国-Vmess
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -100,9 +100,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - "[Hysteria2] 🇺🇸 US美国-Reality"
-      - "[Hysteria2] 🇺🇸 US美国-Hysteria2"      
-      - "[Hysteria2] 🇺🇸 US美国-Vmess"
+      - 🇺🇸 US美国-Reality
+      - 🇺🇸 US美国-Hysteria2      
+      - 🇺🇸 US美国-Vmess
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -115,9 +115,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - "[Hysteria2] 🇺🇸 US美国-Reality"
-      - "[Hysteria2] 🇺🇸 US美国-Hysteria2"      
-      - "[Hysteria2] 🇺🇸 US美国-Vmess"
+      - 🇺🇸 US美国-Reality
+      - 🇺🇸 US美国-Hysteria2      
+      - 🇺🇸 US美国-Vmess
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -142,9 +142,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🔮 负载均衡
-      - "[Hysteria2] 🇺🇸 US美国-Reality"
-      - "[Hysteria2] 🇺🇸 US美国-Hysteria2"      
-      - "[Hysteria2] 🇺🇸 US美国-Vmess"
+      - 🇺🇸 US美国-Reality
+      - 🇺🇸 US美国-Hysteria2      
+      - 🇺🇸 US美国-Vmess
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
