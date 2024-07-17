@@ -19,50 +19,11 @@ proxies:
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup3", server: 103.172.134.136, port: 36382, type: hysteria2, password: fcd93085, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup4", server: 103.172.134.136, port: 27531, type: hysteria2, password: fcd93085, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup5", server: 103.172.134.136, port: 19085, type: hysteria2, password: fcd93085, sni: www.bing.com, skip-cert-verify: true, udp: true} 
- - name: 🇺🇸 US美国-Reality
-    type: vless
-    server: 103.182.97.62
-    port: 443
-    uuid: 4a3a18a6-afda-4a16-895c-93dbd8b9f0c2
-    network: tcp
-    udp: true
-    tls: true
-    flow: xtls-rprx-vision
-    servername: itunes.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: M5h-myBRKSEpoUQRW4GYYLwtM1nzWYizjDmfiIMT7GY
-      short-id: f795b9e1110edd3b
-
- - name: 🇺🇸 US美国-Hysteria2
-    type: hysteria2
-    server: 103.182.97.62
-    port: 8443
-    #  up和down均不写或为0则使用BBR流控
-    # up: "30 Mbps" # 若不写单位，默认为 Mbps
-    # down: "200 Mbps" # 若不写单位，默认为 Mbps
-    password: 88af22a8a5304bdc
-    sni: bing.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-- name: 🇺🇸 US美国-Vmess
-    type: vmess
-    server: speed.cloudflare.com
-    port: 443
-    uuid: 33cffef4-438d-479d-912f-ad8972768e92
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    client-fingerprint: chrome  
-    skip-cert-verify: true
-    servername: pm-julia-friendly-tee.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: e0437225a3be
-      headers:
-        Host: pm-julia-friendly-tee.trycloudflare.com
+  - {name: "[Reality] 🇺🇸 US美国-Reality", type: vless, server: 103.182.97.62, port: 443, uuid: 4a3a18a6-afda-4a16-895c-93dbd8b9f0c2, network: tcp, udp: true, tls: true, flow: xtls-rprx-vision, servername: itunes.apple.com, 
+    client-fingerprint: chrome, reality-opts: public-key: {M5h-myBRKSEpoUQRW4GYYLwtM1nzWYizjDmfiIMT7GY, short-id: f795b9e1110edd3b}} 
+  - {name: "[Hysteria2] 🇺🇸 US美国-Hysteria2", type: hysteria2, server: 103.182.97.62, port: 8443, password: 88af22a8a5304bdc, sni: bing.com, skip-cert-verify: true, udp: true, alpn: - h3} 
+  - {name: "[Vmess] 🇺🇸 US美国-Vmess", type: vmess, server: speed.cloudflare.com, port: 443, uuid: 33cffef4-438d-479d-912f-ad8972768e92, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome,
+    skip-cert-verify: true, servername: pm-julia-friendly-tee.trycloudflare.com, network: ws, ws-opts: {path: e0437225a3be, headers: {Host: pm-julia-friendly-tee.trycloudflare.com}}} 
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -71,9 +32,9 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      - 🇺🇸 US美国-Reality
-      - 🇺🇸 US美国-Hysteria2      
-      - 🇺🇸 US美国-Vmess
+      - "[Reality] 🇺🇸 US美国-Reality"
+      - "[Hysteria2] 🇺🇸 US美国-Hysteria2"      
+      - "[Vmess] 🇺🇸 US美国-Vmess"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -86,9 +47,9 @@ proxy-groups:
     interval: 300
     tolerance: 30
     proxies:
-      - 🇺🇸 US美国-Reality
-      - 🇺🇸 US美国-Hysteria2      
-      - 🇺🇸 US美国-Vmess
+      - "[Reality] 🇺🇸 US美国-Reality"
+      - "[Hysteria2] 🇺🇸 US美国-Hysteria2"      
+      - "[Vmess] 🇺🇸 US美国-Vmess"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -100,9 +61,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - 🇺🇸 US美国-Reality
-      - 🇺🇸 US美国-Hysteria2      
-      - 🇺🇸 US美国-Vmess
+      - "[Reality] 🇺🇸 US美国-Reality"
+      - "[Hysteria2] 🇺🇸 US美国-Hysteria2"      
+      - "[Vmess] 🇺🇸 US美国-Vmess"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -115,9 +76,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - 🇺🇸 US美国-Reality
-      - 🇺🇸 US美国-Hysteria2      
-      - 🇺🇸 US美国-Vmess
+      - "[Reality] 🇺🇸 US美国-Reality"
+      - "[Hysteria2] 🇺🇸 US美国-Hysteria2"      
+      - "[Vmess] 🇺🇸 US美国-Vmess"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -142,9 +103,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🔮 负载均衡
-      - 🇺🇸 US美国-Reality
-      - 🇺🇸 US美国-Hysteria2      
-      - 🇺🇸 US美国-Vmess
+      - "[Reality] 🇺🇸 US美国-Reality"
+      - "[Hysteria2] 🇺🇸 US美国-Hysteria2"      
+      - "[Vmess] 🇺🇸 US美国-Vmess"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
