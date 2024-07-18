@@ -13,12 +13,12 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-  - {name: "[Hysteria2] 🇭🇰 HK香港-原始", server: 103.172.134.136, port: 25006, type: hysteria2, password: fcd93085, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 103.172.134.136, port: 29793, type: hysteria2, password: fcd93085, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup2", server: 103.172.134.136, port: 41470, type: hysteria2, password: fcd93085, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup3", server: 103.172.134.136, port: 36382, type: hysteria2, password: fcd93085, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup4", server: 103.172.134.136, port: 27531, type: hysteria2, password: fcd93085, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup5", server: 103.172.134.136, port: 19085, type: hysteria2, password: fcd93085, sni: www.bing.com, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇭🇰 HK香港-原始", server: 103.172.134.136, port: 21889, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 103.172.134.136, port: 31293, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup2", server: 103.172.134.136, port: 60251, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup3", server: 103.172.134.136, port: 20461, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup4", server: 103.172.134.136, port: 44184, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup5", server: 103.172.134.136, port: 16228, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true} 
 proxy-groups:
   - name: 🚀 节点选择
     type: select
