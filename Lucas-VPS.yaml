@@ -33,12 +33,12 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      - "[Hysteria2] 🇭🇰 US美国-原始"
-      - "[Hysteria2] 🇭🇰 US美国-Backup1"
-      - "[Hysteria2] 🇭🇰 US美国-Backup2"
-      - "[Hysteria2] 🇭🇰 US美国-Backup3"
-      - "[Hysteria2] 🇭🇰 US美国-Backup4"
-      - "[Hysteria2] 🇭🇰 US美国-Backup5"
+      - "[Hysteria2] 🇺🇸 US美国-原始"
+      - "[Hysteria2] 🇺🇸 US美国-Backup1"
+      - "[Hysteria2] 🇺🇸 US美国-Backup2"
+      - "[Hysteria2] 🇺🇸 US美国-Backup3"
+      - "[Hysteria2] 🇺🇸 US美国-Backup4"
+      - "[Hysteria2] 🇺🇸 US美国-Backup5"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -51,12 +51,12 @@ proxy-groups:
     interval: 300
     tolerance: 30
     proxies:
-      - "[Hysteria2] 🇭🇰 US美国-原始"
-      - "[Hysteria2] 🇭🇰 US美国-Backup1"
-      - "[Hysteria2] 🇭🇰 US美国-Backup2"
-      - "[Hysteria2] 🇭🇰 US美国-Backup3"
-      - "[Hysteria2] 🇭🇰 US美国-Backup4"
-      - "[Hysteria2] 🇭🇰 US美国-Backup5"
+      - "[Hysteria2] 🇺🇸 US美国-原始"
+      - "[Hysteria2] 🇺🇸 US美国-Backup1"
+      - "[Hysteria2] 🇺🇸 US美国-Backup2"
+      - "[Hysteria2] 🇺🇸 US美国-Backup3"
+      - "[Hysteria2] 🇺🇸 US美国-Backup4"
+      - "[Hysteria2] 🇺🇸 US美国-Backup5"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -68,12 +68,12 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - "[Hysteria2] 🇭🇰 US美国-原始"
-      - "[Hysteria2] 🇭🇰 US美国-Backup1"
-      - "[Hysteria2] 🇭🇰 US美国-Backup2"
-      - "[Hysteria2] 🇭🇰 US美国-Backup3"
-      - "[Hysteria2] 🇭🇰 US美国-Backup4"
-      - "[Hysteria2] 🇭🇰 US美国-Backup5"
+      - "[Hysteria2] 🇺🇸 US美国-原始"
+      - "[Hysteria2] 🇺🇸 US美国-Backup1"
+      - "[Hysteria2] 🇺🇸 US美国-Backup2"
+      - "[Hysteria2] 🇺🇸 US美国-Backup3"
+      - "[Hysteria2] 🇺🇸 US美国-Backup4"
+      - "[Hysteria2] 🇺🇸 US美国-Backup5"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -86,12 +86,12 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - "[Hysteria2] 🇭🇰 US美国-原始"
-      - "[Hysteria2] 🇭🇰 US美国-Backup1"
-      - "[Hysteria2] 🇭🇰 US美国-Backup2"
-      - "[Hysteria2] 🇭🇰 US美国-Backup3"
-      - "[Hysteria2] 🇭🇰 US美国-Backup4"
-      - "[Hysteria2] 🇭🇰 US美国-Backup5"
+      - "[Hysteria2] 🇺🇸 US美国-原始"
+      - "[Hysteria2] 🇺🇸 US美国-Backup1"
+      - "[Hysteria2] 🇺🇸 US美国-Backup2"
+      - "[Hysteria2] 🇺🇸 US美国-Backup3"
+      - "[Hysteria2] 🇺🇸 US美国-Backup4"
+      - "[Hysteria2] 🇺🇸 US美国-Backup5"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
@@ -116,12 +116,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🔮 负载均衡
-      - "[Hysteria2] 🇭🇰 US美国-原始"
-      - "[Hysteria2] 🇭🇰 US美国-Backup1"
-      - "[Hysteria2] 🇭🇰 US美国-Backup2"
-      - "[Hysteria2] 🇭🇰 US美国-Backup3"
-      - "[Hysteria2] 🇭🇰 US美国-Backup4"
-      - "[Hysteria2] 🇭🇰 US美国-Backup5"
+      - "[Hysteria2] 🇺🇸 US美国-原始"
+      - "[Hysteria2] 🇺🇸 US美国-Backup1"
+      - "[Hysteria2] 🇺🇸 US美国-Backup2"
+      - "[Hysteria2] 🇺🇸 US美国-Backup3"
+      - "[Hysteria2] 🇺🇸 US美国-Backup4"
+      - "[Hysteria2] 🇺🇸 US美国-Backup5"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇭🇰 HK香港-Backup2"
