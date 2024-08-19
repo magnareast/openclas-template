@@ -14,7 +14,7 @@ dns:
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
   - {name: "[Hysteria2] 🇭🇰 HK香港-原始", server: 23.173.216.158, port: 21889, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 23.173.216.158.136, port: 31293, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 23.173.216.158, port: 31293, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup2", server: 23.173.216.158, port: 60251, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup3", server: 23.173.216.158, port: 20461, type: hysteria2 password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup4", server: 23.173.216.158, port: 44184, type: hysteria2, password: 0bf29beb, sni: www.bing.com, skip-cert-verify: true, udp: true}
