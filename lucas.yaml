@@ -24,7 +24,7 @@ proxies:
   - {name: "[Hysteria2] 🇺🇸 US美国-Backup2", server: 148.135.23.229, port: 15485, type: hysteria2, password: 7cd6e086, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇺🇸 US美国-Backup3", server: 148.135.23.229, port: 21231, type: hysteria2, password: 7cd6e086, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇺🇸 US美国-Backup4", server: 148.135.23.229, port: 50594, type: hysteria2, password: 7cd6e086, sni: www.bing.com, skip-cert-verify: true, udp: true} 
-  - {name: "[Hysteria2] 🇺🇸 US美国-Backup4", server: 148.135.23.229, port: 46435, type: hysteria2, password: 7cd6e086, sni: www.bing.com, skip-cert-verify: true, udp: true}    
+  - {name: "[Hysteria2] 🇺🇸 US美国-Backup5", server: 148.135.23.229, port: 46435, type: hysteria2, password: 7cd6e086, sni: www.bing.com, skip-cert-verify: true, udp: true}    
 proxy-groups:
   - name: 🚀 节点选择
     type: select
