@@ -24,7 +24,13 @@ proxies:
   - {name: "[Hysteria2] 🇺🇸 US美国-Backup2", server: 148.135.23.229, port: 15485, type: hysteria2, password: 7cd6e086, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇺🇸 US美国-Backup3", server: 148.135.23.229, port: 21231, type: hysteria2, password: 7cd6e086, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇺🇸 US美国-Backup4", server: 148.135.23.229, port: 50594, type: hysteria2, password: 7cd6e086, sni: www.bing.com, skip-cert-verify: true, udp: true} 
-  - {name: "[Hysteria2] 🇺🇸 US美国-Backup5", server: 148.135.23.229, port: 46435, type: hysteria2, password: 7cd6e086, sni: www.bing.com, skip-cert-verify: true, udp: true}    
+  - {name: "[Hysteria2] 🇺🇸 US美国-Backup5", server: 148.135.23.229, port: 46435, type: hysteria2, password: 7cd6e086, sni: www.bing.com, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇭🇰 HK香港-原始", server: 140.233.191.55, port: 58871, type: hysteria2, password: baa5cfb2, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 140.233.191.55, port: 11395, type: hysteria2, password: baa5cfb2, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup2", server: 140.233.191.55, port: 15485, type: hysteria2, password: baa5cfb2, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup3", server: 140.233.191.55, port: 21231, type: hysteria2, password: baa5cfb2, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup4", server: 140.233.191.55, port: 50594, type: hysteria2, password: baa5cfb2, sni: www.bing.com, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup5", server: 140.233.191.55, port: 46435, type: hysteria2, password: baa5cfb2, sni: www.bing.com, skip-cert-verify: true, udp: true}   
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -44,7 +50,13 @@ proxy-groups:
       - "[Hysteria2] 🇺🇸 US美国-Backup2"
       - "[Hysteria2] 🇺🇸 US美国-Backup3"
       - "[Hysteria2] 🇺🇸 US美国-Backup4"
-      - "[Hysteria2] 🇺🇸 US美国-Backup5"   
+      - "[Hysteria2] 🇺🇸 US美国-Backup5"
+      - "[Hysteria2] 🇭🇰 HK香港-原始"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup1"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup2"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup3"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup4"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup5"     
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -62,7 +74,13 @@ proxy-groups:
       - "[Hysteria2] 🇺🇸 US美国-Backup2"
       - "[Hysteria2] 🇺🇸 US美国-Backup3"
       - "[Hysteria2] 🇺🇸 US美国-Backup4"
-      - "[Hysteria2] 🇺🇸 US美国-Backup5"  
+      - "[Hysteria2] 🇺🇸 US美国-Backup5"
+      - "[Hysteria2] 🇭🇰 HK香港-原始"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup1"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup2"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup3"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup4"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup5"   
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -79,7 +97,13 @@ proxy-groups:
       - "[Hysteria2] 🇺🇸 US美国-Backup2"
       - "[Hysteria2] 🇺🇸 US美国-Backup3"
       - "[Hysteria2] 🇺🇸 US美国-Backup4"
-      - "[Hysteria2] 🇺🇸 US美国-Backup5"  
+      - "[Hysteria2] 🇺🇸 US美国-Backup5"
+      - "[Hysteria2] 🇭🇰 HK香港-原始"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup1"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup2"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup3"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup4"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup5"   
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -97,7 +121,13 @@ proxy-groups:
       - "[Hysteria2] 🇺🇸 US美国-Backup2"
       - "[Hysteria2] 🇺🇸 US美国-Backup3"
       - "[Hysteria2] 🇺🇸 US美国-Backup4"
-      - "[Hysteria2] 🇺🇸 US美国-Backup5"  
+      - "[Hysteria2] 🇺🇸 US美国-Backup5"
+      - "[Hysteria2] 🇭🇰 HK香港-原始"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup1"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup2"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup3"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup4"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup5"   
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -127,7 +157,13 @@ proxy-groups:
       - "[Hysteria2] 🇺🇸 US美国-Backup2"
       - "[Hysteria2] 🇺🇸 US美国-Backup3"
       - "[Hysteria2] 🇺🇸 US美国-Backup4"
-      - "[Hysteria2] 🇺🇸 US美国-Backup5"  
+      - "[Hysteria2] 🇺🇸 US美国-Backup5"
+      - "[Hysteria2] 🇭🇰 HK香港-原始"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup1"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup2"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup3"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup4"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup5"   
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
