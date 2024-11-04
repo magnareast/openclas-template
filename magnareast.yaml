@@ -13,12 +13,7 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-  - {name: "[Hysteria2] 🇭🇰 US美国-原始", server: 103.182.97.62, port: 11395, type: hysteria2, password: 77365a7a, sni: www.bing.com, skip-cert-verify: true, udp: true} 
-  - {name: "[Hysteria2] 🇭🇰 US美国-Backup1", server: 103.172.134.136, port: 15485, type: hysteria2, password: 77365a7a, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 US美国-Backup2", server: 103.172.134.136, port: 21231, type: hysteria2, password: 77365a7a, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 US美国-Backup3", server: 103.172.134.136, port: 50594, type: hysteria2, password: 77365a7a, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 US美国-Backup4", server: 103.172.134.136, port: 37921, type: hysteria2, password: 77365a7a, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 US美国-Backup5", server: 103.172.134.136, port: 46435, type: hysteria2, password: 77365a7a, sni: www.bing.com, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇺🇸 HK美国", server: lucas.ninjavan.top, port: 15485, type: hysteria2, password: Vundun516-, sni: www.bing.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -27,47 +22,27 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      - "[Hysteria2] 🇭🇰 US美国-原始"
-      - "[Hysteria2] 🇭🇰 US美国-Backup1"
-      - "[Hysteria2] 🇭🇰 US美国-Backup2"
-      - "[Hysteria2] 🇭🇰 US美国-Backup3"
-      - "[Hysteria2] 🇭🇰 US美国-Backup4"
-      - "[Hysteria2] 🇭🇰 US美国-Backup5"
+      - "[Hysteria2] 🇺🇸 HK美国"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 30
     proxies:
-      - "[Hysteria2] 🇭🇰 US美国-原始"
-      - "[Hysteria2] 🇭🇰 US美国-Backup1"
-      - "[Hysteria2] 🇭🇰 US美国-Backup2"
-      - "[Hysteria2] 🇭🇰 US美国-Backup3"
-      - "[Hysteria2] 🇭🇰 US美国-Backup4"
-      - "[Hysteria2] 🇭🇰 US美国-Backup5"
+      - "[Hysteria2] 🇺🇸 HK美国"
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - "[Hysteria2] 🇭🇰 US美国-原始"
-      - "[Hysteria2] 🇭🇰 US美国-Backup1"
-      - "[Hysteria2] 🇭🇰 US美国-Backup2"
-      - "[Hysteria2] 🇭🇰 US美国-Backup3"
-      - "[Hysteria2] 🇭🇰 US美国-Backup4"
-      - "[Hysteria2] 🇭🇰 US美国-Backup5"
+      - "[Hysteria2] 🇺🇸 HK美国"
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - "[Hysteria2] 🇭🇰 US美国-原始"
-      - "[Hysteria2] 🇭🇰 US美国-Backup1"
-      - "[Hysteria2] 🇭🇰 US美国-Backup2"
-      - "[Hysteria2] 🇭🇰 US美国-Backup3"
-      - "[Hysteria2] 🇭🇰 US美国-Backup4"
-      - "[Hysteria2] 🇭🇰 US美国-Backup5"
+      - "[Hysteria2] 🇺🇸 HK美国"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -86,12 +61,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🔮 负载均衡
-      - "[Hysteria2] 🇭🇰 US美国-原始"
-      - "[Hysteria2] 🇭🇰 US美国-Backup1"
-      - "[Hysteria2] 🇭🇰 US美国-Backup2"
-      - "[Hysteria2] 🇭🇰 US美国-Backup3"
-      - "[Hysteria2] 🇭🇰 US美国-Backup4"
-      - "[Hysteria2] 🇭🇰 US美国-Backup5"
+      - "[Hysteria2] 🇺🇸 HK美国"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
