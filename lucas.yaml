@@ -17,7 +17,6 @@ proxies:
   - {name: "[Hysteria2] 🇯🇵 JP日本", server: 23.173.216.158, port: 21231, type: hysteria2, password: baa5cfb2, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇭🇰 HK香港-原始", server: 8.210.56.192, port: 32238, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 8.210.56.192, port: 15485, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}  
-  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup2", server: 8.210.56.192, port: 21231, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}  
   - {name: "[Hysteria2] 🇺🇸 US美国-电信", server: 103.182.97.62, port: 15485, type: hysteria2, password: baa5cfb2, sni: totous.ninjavan.top, skip-cert-verify: true, udp: true} 
 
 proxy-groups:
@@ -32,7 +31,6 @@ proxy-groups:
       - "[Hysteria2] 🇯🇵 JP日本"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
-      - "[Hysteria2] 🇭🇰 HK香港-Backup2"  
       - "[Hysteria2] 🇺🇸 US美国-电信"
   - name: ♻️ 自动选择
     type: url-test
@@ -44,7 +42,6 @@ proxy-groups:
       - "[Hysteria2] 🇯🇵 JP日本"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
-      - "[Hysteria2] 🇭🇰 HK香港-Backup2"  
       - "[Hysteria2] 🇺🇸 US美国-电信"
   - name: 🔯 故障转移
     type: fallback
@@ -55,7 +52,6 @@ proxy-groups:
       - "[Hysteria2] 🇯🇵 JP日本"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
-      - "[Hysteria2] 🇭🇰 HK香港-Backup2"  
       - "[Hysteria2] 🇺🇸 US美国-电信"
   - name: 🔮 负载均衡
     type: load-balance
@@ -67,7 +63,6 @@ proxy-groups:
       - "[Hysteria2] 🇯🇵 JP日本"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
-      - "[Hysteria2] 🇭🇰 HK香港-Backup2"  
       - "[Hysteria2] 🇺🇸 US美国-电信"
   - name: 🎯 全球直连
     type: select
@@ -91,7 +86,6 @@ proxy-groups:
       - "[Hysteria2] 🇯🇵 JP日本"
       - "[Hysteria2] 🇭🇰 HK香港-原始"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
-      - "[Hysteria2] 🇭🇰 HK香港-Backup2"  
       - "[Hysteria2] 🇺🇸 US美国-电信"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
