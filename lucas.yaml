@@ -78,8 +78,6 @@ proxy-groups:
       - "🎯 全球直连"
       - "⛱️ 自动选择"
 rules:
-  - DOMAIN-SUFFIX,chat.openai.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,ai.com,🤖 ChatGPT
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
@@ -133,6 +131,8 @@ rules:
   - DOMAIN,rewards.hypixel.net,🎯 全球直连
   - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
   - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
+  - DOMAIN-SUFFIX,chat.openai.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,ai.com,🤖 ChatGPT  
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
