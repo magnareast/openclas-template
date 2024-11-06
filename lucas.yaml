@@ -65,7 +65,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - "🚀 节点选择"
-      - "♻️ 自动选择"
+      - "⛱️ 自动选择"
   - name: "🛑 全球拦截"
     type: select
     proxies:
@@ -76,7 +76,7 @@ proxy-groups:
     proxies:
       - "🚀 节点选择"
       - "🎯 全球直连"
-      - "♻️ 自动选择"
+      - "⛱️ 自动选择"
 rules:
   - DOMAIN-SUFFIX,chat.openai.com,🤖 ChatGPT
   - DOMAIN-SUFFIX,ai.com,🤖 ChatGPT
