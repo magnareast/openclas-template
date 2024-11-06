@@ -78,11 +78,6 @@ proxy-groups:
       - "🎯 全球直连"
       - "⛱️ 自动选择"
 rules:
-  - DOMAIN-SUFFIX,chat.openai.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,ai.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,auth0.openai.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,openai.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,chatgpt.com,🤖 ChatGPT
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
@@ -2553,6 +2548,11 @@ rules:
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
   - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
   - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
+  - DOMAIN-SUFFIX,chat.openai.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,ai.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,auth0.openai.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,openai.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,chatgpt.com,🤖 ChatGPT  
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
