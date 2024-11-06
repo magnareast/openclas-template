@@ -78,6 +78,8 @@ proxy-groups:
       - "🎯 全球直连"
       - "⛱️ 自动选择"
 rules:
+ruleset=🤖 ChatGPT,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list
+ruleset=🤖 ChatGPT,https://raw.githubusercontent.com/magnareast/openclas-template/refs/heads/main/Ai.list
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
@@ -2548,26 +2550,6 @@ rules:
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
   - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
   - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
-  - DOMAIN-KEYWORD,openai,🤖 ChatGPT
-  - DOMAIN-KEYWORD,anthropic,🤖 ChatGPT
-  - DOMAIN-KEYWORD,Claude,🤖 ChatGPT
-  - DOMAIN-SUFFIX,perplexity.ai,🤖 ChatGPT
-  - DOMAIN-SUFFIX,chatgpt.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,auth0.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,events.statsigapi.net,🤖 ChatGPT
-  - DOMAIN-SUFFIX,featuregates.org,🤖 ChatGPT
-  - DOMAIN-SUFFIX,identrust.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,intercom.io,🤖 ChatGPT
-  - DOMAIN-SUFFIX,intercomcdn.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,oaistatic.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,oaiusercontent.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,openai.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🤖 ChatGPT
-  - DOMAIN-SUFFIX,sentry.io,🤖 ChatGPT
-  - DOMAIN-SUFFIX,stripe.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,anthropic.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,claude.ai.com,🤖 ChatGPT
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
