@@ -78,8 +78,61 @@ proxy-groups:
       - "🎯 全球直连"
       - "⛱️ 自动选择"
 rules:
-ruleset=🤖 ChatGPT,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list
-ruleset=🤖 ChatGPT,https://raw.githubusercontent.com/magnareast/openclas-template/refs/heads/main/Ai.list
+  - DOMAIN,browser-intake-datadoghq.com,🤖 ChatGPT
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net,🤖 ChatGPT
+  - DOMAIN,gemini.google.com,🤖 ChatGPT
+  - DOMAIN,openai-api.arkoselabs.com,🤖 ChatGPT
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,🤖 ChatGPT
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,🤖 ChatGPT
+  - DOMAIN,production-openaicom-storage.azureedge.net,🤖 ChatGPT
+  - DOMAIN,static.cloudflareinsights.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,ai.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,algolia.net,🤖 ChatGPT
+  - DOMAIN-SUFFIX,api.statsig.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,auth0.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,chatgpt.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,🤖 ChatGPT
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,events.statsigapi.net,🤖 ChatGPT
+  - DOMAIN-SUFFIX,featuregates.org,🤖 ChatGPT
+  - DOMAIN-SUFFIX,host.livekit.cloud,🤖 ChatGPT
+  - DOMAIN-SUFFIX,identrust.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,intercom.io,🤖 ChatGPT
+  - DOMAIN-SUFFIX,intercomcdn.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,launchdarkly.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,oaistatic.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,oaiusercontent.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,observeit.net,🤖 ChatGPT
+  - DOMAIN-SUFFIX,openai.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🤖 ChatGPT
+  - DOMAIN-SUFFIX,openaicom.imgix.net,🤖 ChatGPT
+  - DOMAIN-SUFFIX,segment.io,🤖 ChatGPT
+  - DOMAIN-SUFFIX,sentry.io,🤖 ChatGPT
+  - DOMAIN-SUFFIX,stripe.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,turn.livekit.cloud,🤖 ChatGPT
+  - DOMAIN-KEYWORD,openai,🤖 ChatGPT
+  - IP-CIDR,24.199.123.28/32,no-resolve,🤖 ChatGPT
+  - IP-CIDR,64.23.132.171/32,no-resolve,🤖 ChatGPT
+  - IP-ASN,20473,no-resolve,🤖 ChatGPT
+  - DOMAIN-SUFFIX,anthropic.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,claude.ai,🤖 ChatGPT
+  - DOMAIN-SUFFIX,bing.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,bingapis.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,microsoft-falcon.io,🤖 ChatGPT
+  - DOMAIN-SUFFIX,microsoftapp.net,🤖 ChatGPT
+  - DOMAIN,api.msn.com,🤖 ChatGPT
+  - DOMAIN,assets.msn.com,🤖 ChatGPT
+  - DOMAIN,copilot.microsoft.com,🤖 ChatGPT
+  - DOMAIN,location.microsoft.com,🤖 ChatGPT
+  - DOMAIN,login.microsoftonline.com,🤖 ChatGPT
+  - DOMAIN,self.events.data.microsoft.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,gemini.google.com,🤖 ChatGPT
+  - DOMAIN,apis.google.com,🤖 ChatGPT
+  - DOMAIN,colab.research.google.com,🤖 ChatGPT
+  - DOMAIN,content-developerprofiles-pa.googleapis.com,🤖 ChatGPT
+  - DOMAIN,generativelanguage.googleapis.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,meta.ai,🤖 ChatGPT
+  - DOMAIN-SUFFIX,perplexity.ai,🤖 ChatGPT
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
@@ -2045,11 +2098,6 @@ ruleset=🤖 ChatGPT,https://raw.githubusercontent.com/magnareast/openclas-templ
   - DOMAIN-SUFFIX,olevod.io,🚀 节点选择
   - DOMAIN-SUFFIX,olevod.tv,🚀 节点选择
   - DOMAIN-SUFFIX,olevodtv.com,🚀 节点选择
-  - DOMAIN-KEYWORD,openai,🚀 节点选择
-  - DOMAIN,gemini.google.com,🚀 节点选择
-  - DOMAIN-SUFFIX,auth0.com,🚀 节点选择
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
-  - DOMAIN-SUFFIX,chatgpt.com,🚀 节点选择
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,🚀 节点选择
   - DOMAIN-SUFFIX,events.statsigapi.net,🚀 节点选择
   - DOMAIN-SUFFIX,featuregates.org,🚀 节点选择
@@ -2058,8 +2106,6 @@ ruleset=🤖 ChatGPT,https://raw.githubusercontent.com/magnareast/openclas-templ
   - DOMAIN-SUFFIX,intercomcdn.com,🚀 节点选择
   - DOMAIN-SUFFIX,oaistatic.com,🚀 节点选择
   - DOMAIN-SUFFIX,oaiusercontent.com,🚀 节点选择
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🚀 节点选择
   - DOMAIN-SUFFIX,sentry.io,🚀 节点选择
   - DOMAIN-SUFFIX,stripe.com,🚀 节点选择
   - DOMAIN-SUFFIX,pbs.org,🚀 节点选择
@@ -2428,8 +2474,6 @@ ruleset=🤖 ChatGPT,https://raw.githubusercontent.com/magnareast/openclas-templ
   - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
