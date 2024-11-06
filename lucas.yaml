@@ -79,7 +79,9 @@ proxy-groups:
       - "⛱️ 自动选择"
 rules:
   - DOMAIN,browser-intake-datadoghq.com,🤖 ChatGPT
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net,🤖 ChatGPT
+  - DOMAIN,chat.openai.com,🤖 ChatGPT
+  - DOMAIN,ios.chat.openai.com,🤖 ChatGPT 
+  - DOMAIN,cdn.cloudflare.net,🤖 ChatGPT 
   - DOMAIN,gemini.google.com,🤖 ChatGPT
   - DOMAIN,openai-api.arkoselabs.com,🤖 ChatGPT
   - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,🤖 ChatGPT
@@ -111,28 +113,13 @@ rules:
   - DOMAIN-SUFFIX,stripe.com,🤖 ChatGPT
   - DOMAIN-SUFFIX,turn.livekit.cloud,🤖 ChatGPT
   - DOMAIN-KEYWORD,openai,🤖 ChatGPT
+  - DOMAIN-KEYWORD,chatgpt,🤖 ChatGPT  
   - IP-CIDR,24.199.123.28/32,no-resolve,🤖 ChatGPT
   - IP-CIDR,64.23.132.171/32,no-resolve,🤖 ChatGPT
   - IP-ASN,20473,no-resolve,🤖 ChatGPT
   - DOMAIN-SUFFIX,anthropic.com,🤖 ChatGPT
   - DOMAIN-SUFFIX,claude.ai,🤖 ChatGPT
-  - DOMAIN-SUFFIX,bing.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,bingapis.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,microsoft-falcon.io,🤖 ChatGPT
-  - DOMAIN-SUFFIX,microsoftapp.net,🤖 ChatGPT
-  - DOMAIN,api.msn.com,🤖 ChatGPT
-  - DOMAIN,assets.msn.com,🤖 ChatGPT
   - DOMAIN,copilot.microsoft.com,🤖 ChatGPT
-  - DOMAIN,location.microsoft.com,🤖 ChatGPT
-  - DOMAIN,login.microsoftonline.com,🤖 ChatGPT
-  - DOMAIN,self.events.data.microsoft.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,gemini.google.com,🤖 ChatGPT
-  - DOMAIN,apis.google.com,🤖 ChatGPT
-  - DOMAIN,colab.research.google.com,🤖 ChatGPT
-  - DOMAIN,content-developerprofiles-pa.googleapis.com,🤖 ChatGPT
-  - DOMAIN,generativelanguage.googleapis.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,meta.ai,🤖 ChatGPT
-  - DOMAIN-SUFFIX,perplexity.ai,🤖 ChatGPT
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
@@ -2199,13 +2186,6 @@ rules:
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
   - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
-  - DOMAIN-SUFFIX,eu,🚀 节点选择
-  - DOMAIN-SUFFIX,hk,🚀 节点选择
-  - DOMAIN-SUFFIX,jp,🚀 节点选择
-  - DOMAIN-SUFFIX,kr,🚀 节点选择
-  - DOMAIN-SUFFIX,sg,🚀 节点选择
-  - DOMAIN-SUFFIX,tw,🚀 节点选择
-  - DOMAIN-SUFFIX,uk,🚀 节点选择
   - DOMAIN-KEYWORD,1e100,🚀 节点选择
   - DOMAIN-KEYWORD,abema,🚀 节点选择
   - DOMAIN-KEYWORD,appledaily,🚀 节点选择
