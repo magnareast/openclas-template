@@ -20,14 +20,14 @@ proxies:
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 8.210.56.192, port: 15485, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}  
   - {name: "[Hysteria2] 🇺🇸 US美国-电信", server: 103.182.97.62, port: 15485, type: hysteria2, password: baa5cfb2, sni: totous.ninjavan.top, skip-cert-verify: true, udp: true} 
 proxy-groups:
-  - name: 🚀 节点选择
+  - name: "🚀 节点选择"
     type: select
     proxies:
-      - ♻ 自动选择
-      - 🇺🇸 美国优选 
-      - 🇭🇰 香港优选
+      - "♻ 自动选择"
+      - "🇺🇸 美国优选"
+      - "🇭🇰 香港优选"
       - DIRECT
-  - name: ♻️ 自动选择
+  - name: "♻️ 自动选择"
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -37,7 +37,7 @@ proxy-groups:
       - "[Hysteria2] 🇭🇰 HK香港"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇺🇸 US美国-电信"
-  - name: 🤖 ChatGPT
+  - name: "🤖 ChatGPT"
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -45,7 +45,7 @@ proxy-groups:
     proxies:
       - "[Hysteria2] 🇯🇵 JP日本"
       - "[Hysteria2] 🇯🇵 JP日本-Backup1"      
-  - name: 🇺🇸 美国优选
+  - name: "🇺🇸 美国优选"
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -53,7 +53,7 @@ proxy-groups:
     proxies:
       - "[Hysteria2] 🇺🇸 US美国"    
       - "[Hysteria2] 🇺🇸 US美国-电信"
-  - name: 🇭🇰 香港优选
+  - name: "🇭🇰 香港优选"
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -61,23 +61,23 @@ proxy-groups:
     proxies:
       - "[Hysteria2] 🇭🇰 HK香港"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"      
-  - name: 🎯 全球直连
+  - name: "🎯 全球直连"
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
-  - name: 🛑 全球拦截
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
+  - name: "🛑 全球拦截"
     type: select
     proxies:
       - REJECT
       - DIRECT
-  - name: 🐟 漏网之鱼
+  - name: "🐟 漏网之鱼"
     type: select
     proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
+      - "🚀 节点选择"
+      - "🎯 全球直连"
+      - "♻️ 自动选择"
 rules:
   - DOMAIN-SUFFIX,chat.openai.com,🤖 ChatGPT
   - DOMAIN-SUFFIX,ai.com,🤖 ChatGPT
