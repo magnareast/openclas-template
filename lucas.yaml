@@ -5,11 +5,11 @@ external-controller: :'127.0.0.1:5678'
 dns:
     enable: false
     ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29, 8.8.8.8]
+    default-nameserver: [223.5.5.5, 119.29.29.29]
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
-    nameserver: [114.114.114.114, 8.8.8.8, 223.5.5.5, 180.76.76.76, 119.29.29.29]
+    nameserver: [114.114.114.114, 8.8.8.8]
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
@@ -29,6 +29,7 @@ proxy-groups:
       - "🇸🇬 新加坡优选"      
       - "🇺🇸 美国优选"
       - "🇭🇰 香港优选"
+      - "🇯🇵 日本优选"
   - name: "⛱️ 自动选择"
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -41,14 +42,12 @@ proxy-groups:
       - "[Hysteria2] 🇺🇸 US美国-电信"
       - "[Hysteria2] 🇸🇬 SG新加坡-原始"
       - "[Hysteria2] 🇸🇬 SG新加坡-Backup1"      
-  - name: "🤖 ChatGPT"
+  - name: "🇯🇵 日本优选"
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 30
     proxies:
-      - "[Hysteria2] 🇸🇬 SG新加坡-原始"
-      - "[Hysteria2] 🇸🇬 SG新加坡-Backup1"
       - "[Hysteria2] 🇯🇵 JP日本"
       - "[Hysteria2] 🇯🇵 JP日本-Backup1"      
   - name: "🇺🇸 美国优选"
@@ -93,41 +92,6 @@ proxy-groups:
       - "🎯 全球直连"
       - "⛱️ 自动选择"
 rules:
-  - DOMAIN,browser-intake-datadoghq.com,🤖 ChatGPT
-  - DOMAIN,chat.openai.com,🤖 ChatGPT
-  - DOMAIN,ios.chat.openai.com,🤖 ChatGPT 
-  - DOMAIN,cdn.cloudflare.net,🤖 ChatGPT 
-  - DOMAIN,gemini.google.com,🤖 ChatGPT
-  - DOMAIN,openai-api.arkoselabs.com,🤖 ChatGPT
-  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,🤖 ChatGPT
-  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,🤖 ChatGPT
-  - DOMAIN,production-openaicom-storage.azureedge.net,🤖 ChatGPT
-  - DOMAIN,static.cloudflareinsights.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,ai.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,algolia.net,🤖 ChatGPT
-  - DOMAIN-SUFFIX,api.statsig.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,auth0.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,chatgpt.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,🤖 ChatGPT
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,events.statsigapi.net,🤖 ChatGPT
-  - DOMAIN-SUFFIX,featuregates.org,🤖 ChatGPT
-  - DOMAIN-SUFFIX,host.livekit.cloud,🤖 ChatGPT
-  - DOMAIN-SUFFIX,identrust.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,intercom.io,🤖 ChatGPT
-  - DOMAIN-SUFFIX,intercomcdn.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,launchdarkly.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,oaistatic.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,oaiusercontent.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,observeit.net,🤖 ChatGPT
-  - DOMAIN-SUFFIX,openai.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🤖 ChatGPT
-  - DOMAIN-SUFFIX,openaicom.imgix.net,🤖 ChatGPT
-  - DOMAIN-KEYWORD,openai,🤖 ChatGPT
-  - DOMAIN-KEYWORD,chatgpt,🤖 ChatGPT  
-  - DOMAIN-SUFFIX,anthropic.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,claude.ai,🤖 ChatGPT
-  - DOMAIN,copilot.microsoft.com,🤖 ChatGPT
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
@@ -2093,6 +2057,11 @@ rules:
   - DOMAIN-SUFFIX,olevod.io,🚀 节点选择
   - DOMAIN-SUFFIX,olevod.tv,🚀 节点选择
   - DOMAIN-SUFFIX,olevodtv.com,🚀 节点选择
+  - DOMAIN-KEYWORD,openai,🚀 节点选择
+  - DOMAIN,gemini.google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,auth0.com,🚀 节点选择
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,chatgpt.com,🚀 节点选择
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,🚀 节点选择
   - DOMAIN-SUFFIX,events.statsigapi.net,🚀 节点选择
   - DOMAIN-SUFFIX,featuregates.org,🚀 节点选择
@@ -2101,6 +2070,8 @@ rules:
   - DOMAIN-SUFFIX,intercomcdn.com,🚀 节点选择
   - DOMAIN-SUFFIX,oaistatic.com,🚀 节点选择
   - DOMAIN-SUFFIX,oaiusercontent.com,🚀 节点选择
+  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🚀 节点选择
   - DOMAIN-SUFFIX,sentry.io,🚀 节点选择
   - DOMAIN-SUFFIX,stripe.com,🚀 节点选择
   - DOMAIN-SUFFIX,pbs.org,🚀 节点选择
@@ -2194,6 +2165,13 @@ rules:
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
   - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
+  - DOMAIN-SUFFIX,eu,🚀 节点选择
+  - DOMAIN-SUFFIX,hk,🚀 节点选择
+  - DOMAIN-SUFFIX,jp,🚀 节点选择
+  - DOMAIN-SUFFIX,kr,🚀 节点选择
+  - DOMAIN-SUFFIX,sg,🚀 节点选择
+  - DOMAIN-SUFFIX,tw,🚀 节点选择
+  - DOMAIN-SUFFIX,uk,🚀 节点选择
   - DOMAIN-KEYWORD,1e100,🚀 节点选择
   - DOMAIN-KEYWORD,abema,🚀 节点选择
   - DOMAIN-KEYWORD,appledaily,🚀 节点选择
@@ -2462,6 +2440,8 @@ rules:
   - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
+  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
