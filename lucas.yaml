@@ -44,10 +44,10 @@ proxy-groups:
     - name: "🤖 ChatGPT"
     type: select
     proxies:
-      - "🇸🇬 新加坡优选"      
-      - "🇺🇸 美国优选"
-      - "🇭🇰 香港优选"
-      - "🇯🇵 日本优选"    
+      - "[Hysteria2] 🇯🇵 JP日本"
+      - "[Hysteria2] 🇯🇵 JP日本-Backup1" 
+      - "[Hysteria2] 🇸🇬 SG新加坡-原始"
+      - "[Hysteria2] 🇸🇬 SG新加坡-Backup1" 
   - name: "🇺🇸 美国优选"
     type: url-test
     url: http://www.gstatic.com/generate_204
