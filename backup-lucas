@@ -19,79 +19,78 @@ proxies:
   - {name: "[Hysteria2] 🇭🇰 HK香港", server: 8.210.56.192, port: 32238, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 8.210.56.192, port: 15485, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}  
   - {name: "[Hysteria2] 🇺🇸 US美国-电信", server: 103.182.97.62, port: 15485, type: hysteria2, password: baa5cfb2, sni: totous.ninjavan.top, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-原始", server: 8.222.248.188, port: 64253, type: hysteria2, password: f87e760b, sni: www.bing.com, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup1", server: 8.222.248.188, port: 37921, type: hysteria2, password: f87e760b, sni: www.bing.com, skip-cert-verify: true, udp: true}   
 proxy-groups:
-  - name: 🚀 节点选择
+  - name: "🚀 节点选择"
     type: select
     proxies:
-      - ♻️ 自动选择
-      - 🔯 故障转移
-      - 🔮 负载均衡
-      - DIRECT
-      - "[Hysteria2] 🇺🇸 US美国"    
-      - "[Hysteria2] 🇯🇵 JP日本"
-      - "[Hysteria2] 🇯🇵 JP日本-Backup1"      
+      - "⛱️ 自动选择"
+      - "🇸🇬 新加坡优选"      
+      - "🇺🇸 美国优选"
+      - "🇭🇰 香港优选"
+      - "🇯🇵 日本优选"
+  - name: "⛱️ 自动选择"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
+    proxies:
+      - "[Hysteria2] 🇺🇸 US美国"      
       - "[Hysteria2] 🇭🇰 HK香港"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇺🇸 US美国-电信"
-  - name: ♻️ 自动选择
+      - "[Hysteria2] 🇸🇬 SG新加坡-原始"
+      - "[Hysteria2] 🇸🇬 SG新加坡-Backup1"      
+  - name: "🇯🇵 日本优选"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
+    proxies:
+      - "[Hysteria2] 🇯🇵 JP日本"
+      - "[Hysteria2] 🇯🇵 JP日本-Backup1"      
+  - name: "🇺🇸 美国优选"
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 30
     proxies:
       - "[Hysteria2] 🇺🇸 US美国"    
-      - "[Hysteria2] 🇯🇵 JP日本"
-      - "[Hysteria2] 🇯🇵 JP日本-Backup1"      
-      - "[Hysteria2] 🇭🇰 HK香港"
-      - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇺🇸 US美国-电信"
-  - name: 🔯 故障转移
-    type: fallback
+  - name: "🇭🇰 香港优选"
+    type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 180
+    interval: 300
+    tolerance: 30
     proxies:
-      - "[Hysteria2] 🇺🇸 US美国"    
-      - "[Hysteria2] 🇯🇵 JP日本"
-      - "[Hysteria2] 🇯🇵 JP日本-Backup1"      
       - "[Hysteria2] 🇭🇰 HK香港"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
-      - "[Hysteria2] 🇺🇸 US美国-电信"
-  - name: 🔮 负载均衡
-    type: load-balance
-    strategy: consistent-hashing
+  - name: "🇸🇬 新加坡优选"
+    type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 180
+    interval: 300
+    tolerance: 30
     proxies:
-      - "[Hysteria2] 🇺🇸 US美国"    
-      - "[Hysteria2] 🇯🇵 JP日本"
-      - "[Hysteria2] 🇯🇵 JP日本-Backup1"      
-      - "[Hysteria2] 🇭🇰 HK香港"
-      - "[Hysteria2] 🇭🇰 HK香港-Backup1"
-      - "[Hysteria2] 🇺🇸 US美国-电信"
-  - name: 🎯 全球直连
+      - "[Hysteria2] 🇸🇬 SG新加坡-原始"
+      - "[Hysteria2] 🇸🇬 SG新加坡-Backup1" 
+  - name: "🎯 全球直连"
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
-  - name: 🛑 全球拦截
+      - "🚀 节点选择"
+      - "⛱️ 自动选择"
+  - name: "🛑 全球拦截"
     type: select
     proxies:
       - REJECT
       - DIRECT
-  - name: 🐟 漏网之鱼
+  - name: "🐟 漏网之鱼"
     type: select
     proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-      - 🔮 负载均衡
-      - "[Hysteria2] 🇺🇸 US美国"    
-      - "[Hysteria2] 🇯🇵 JP日本"
-      - "[Hysteria2] 🇯🇵 JP日本-Backup1"      
-      - "[Hysteria2] 🇭🇰 HK香港"
-      - "[Hysteria2] 🇭🇰 HK香港-Backup1"
-      - "[Hysteria2] 🇺🇸 US美国-电信"
+      - "🚀 节点选择"
+      - "🎯 全球直连"
+      - "⛱️ 自动选择"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
