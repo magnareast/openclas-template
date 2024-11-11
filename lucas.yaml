@@ -19,8 +19,8 @@ proxies:
   - {name: "[Hysteria2] 🇭🇰 HK香港", server: 8.210.56.192, port: 32238, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 8.210.56.192, port: 15485, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}  
   - {name: "[Hysteria2] 🇺🇸 US美国-电信", server: 103.182.97.62, port: 15485, type: hysteria2, password: baa5cfb2, sni: totous.ninjavan.top, skip-cert-verify: true, udp: true} 
-  - {name: "[Hysteria2] 🇸🇬 SG新加坡-原始", server: 8.222.204.143, port: 40621, type: hysteria2, password: 503a96cd, sni: www.bing.com, skip-cert-verify: true, udp: true} 
-  - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup1", server: 8.222.204.143, port: 37921, type: hysteria2, password: 503a96cd, sni: www.bing.com, skip-cert-verify: true, udp: true}   
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-原始", server: 8.222.248.188, port: 64253, type: hysteria2, password: f87e760b, sni: www.bing.com, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup1", server: 8.222.248.188, port: 37921, type: hysteria2, password: f87e760b, sni: www.bing.com, skip-cert-verify: true, udp: true}   
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -48,7 +48,9 @@ proxy-groups:
     tolerance: 30
     proxies:
       - "[Hysteria2] 🇸🇬 SG新加坡-原始"
-      - "[Hysteria2] 🇸🇬 SG新加坡-Backup1"        
+      - "[Hysteria2] 🇸🇬 SG新加坡-Backup1"
+      - "[Hysteria2] 🇯🇵 JP日本"
+      - "[Hysteria2] 🇯🇵 JP日本-Backup1"      
   - name: "🇺🇸 美国优选"
     type: url-test
     url: http://www.gstatic.com/generate_204
