@@ -42,7 +42,10 @@ proxy-groups:
       - "[Hysteria2] 🇸🇬 SG新加坡-原始"
       - "[Hysteria2] 🇸🇬 SG新加坡-Backup1"       
     - name: "🤖 ChatGPT"
-    type: select
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
     proxies:
       - "[Hysteria2] 🇯🇵 JP日本"
       - "[Hysteria2] 🇯🇵 JP日本-Backup1" 
