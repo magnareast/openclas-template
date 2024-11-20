@@ -19,8 +19,11 @@ proxies:
   - {name: "[Hysteria2] 🇭🇰 HK香港", server: 8.210.56.192, port: 32238, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 8.210.56.192, port: 15485, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}  
   - {name: "[Hysteria2] 🇺🇸 US美国-电信", server: 103.182.97.62, port: 15485, type: hysteria2, password: baa5cfb2, sni: totous.ninjavan.top, skip-cert-verify: true, udp: true} 
-  - {name: "[Hysteria2] 🇸🇬 SG新加坡-原始", server: 8.222.248.188, port: 64253, type: hysteria2, password: f87e760b, sni: www.bing.com, skip-cert-verify: true, udp: true} 
-  - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup1", server: 8.222.248.188, port: 37921, type: hysteria2, password: f87e760b, sni: www.bing.com, skip-cert-verify: true, udp: true}   
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-8折", server: 8.222.248.188, port: 64253, type: hysteria2, password: f87e760b, sni: www.bing.com, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup1", server: 8.222.248.188, port: 37921, type: hysteria2, password: f87e760b, sni: www.bing.com, skip-cert-verify: true, udp: true}  
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-4折", server: 8.219.158.195, port: 27146, type: hysteria2, password: e573635a, sni: www.bing.com, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup2", server: 8.219.158.195, port: 11395, type: hysteria2, password: e573635a, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -39,8 +42,11 @@ proxy-groups:
       - "[Hysteria2] 🇭🇰 HK香港"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇺🇸 US美国-电信"
-      - "[Hysteria2] 🇸🇬 SG新加坡-原始"
-      - "[Hysteria2] 🇸🇬 SG新加坡-Backup1"      
+      - "[Hysteria2] 🇸🇬 SG新加坡-8折"
+      - "[Hysteria2] 🇸🇬 SG新加坡-Backup1" 
+      - "[Hysteria2] 🇸🇬 SG新加坡-4折"
+      - "[Hysteria2] 🇸🇬 SG新加坡-Backup2"
+      
   - name: "🤖 ChatGPT"
     type: select
     proxies:
@@ -78,8 +84,10 @@ proxy-groups:
     interval: 300
     tolerance: 30
     proxies:
-      - "[Hysteria2] 🇸🇬 SG新加坡-原始"
+      - "[Hysteria2] 🇸🇬 SG新加坡-8折"
       - "[Hysteria2] 🇸🇬 SG新加坡-Backup1" 
+      - "[Hysteria2] 🇸🇬 SG新加坡-4折"
+      - "[Hysteria2] 🇸🇬 SG新加坡-Backup2"
   - name: "🎯 全球直连"
     type: select
     proxies:
