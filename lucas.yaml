@@ -22,7 +22,7 @@ proxies:
   - {name: "[Hysteria2] 🇸🇬 SG新加坡-8折", server: 8.222.248.188, port: 64253, type: hysteria2, password: f87e760b, sni: www.bing.com, skip-cert-verify: true, udp: true} 
   - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup1", server: 8.222.248.188, port: 37921, type: hysteria2, password: f87e760b, sni: www.bing.com, skip-cert-verify: true, udp: true}  
   - {name: "[Hysteria2] 🇸🇬 SG新加坡-4折", server: 8.219.158.195, port: 27146, type: hysteria2, password: e573635a, sni: www.bing.com, skip-cert-verify: true, udp: true} 
-  - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup2", server: 8.219.158.195, port: 11395, type: hysteria2, password: e573635a, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup2", server: 8.219.158.195, port: 50594, type: hysteria2, password: e573635a, sni: www.bing.com, skip-cert-verify: true, udp: true}
   
 proxy-groups:
   - name: "🚀 节点选择"
