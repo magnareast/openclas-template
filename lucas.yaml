@@ -17,7 +17,9 @@ proxies:
   - {name: "[Hysteria2] 🇯🇵 JP日本", server: 23.173.216.158, port: 50094, type: hysteria2, password: 5508e658, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇯🇵 JP日本-Backup1", server: 23.173.216.158, port: 37921, type: hysteria2, password: 5508e658, sni: www.bing.com, skip-cert-verify: true, udp: true}  
   - {name: "[Hysteria2] 🇭🇰 HK香港", server: 8.210.56.192, port: 32238, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 8.210.56.192, port: 15485, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}  
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup", server: 8.210.56.192, port: 15485, type: hysteria2, password: 6048a205, sni: www.bing.com, skip-cert-verify: true, udp: true}  
+  - {name: "[Hysteria2] 🇭🇰 HK香港-独享", server: 47.243.235.104, port: 48520, type: hysteria2, password: c6bcc4e3, sni: www.bing.com, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 47.243.235.104, port: 16435, type: hysteria2, password: c6bcc4e3, sni: www.bing.com, skip-cert-verify: true, udp: true}   
   - {name: "[Hysteria2] 🇺🇸 US美国-电信", server: 103.182.97.62, port: 15485, type: hysteria2, password: baa5cfb2, sni: totous.ninjavan.top, skip-cert-verify: true, udp: true} 
   - {name: "[Hysteria2] 🇸🇬 SG新加坡", server: 8.219.158.195, port: 27146, type: hysteria2, password: e573635a, sni: www.bing.com, skip-cert-verify: true, udp: true} 
   - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup1", server: 8.219.158.195, port: 50594, type: hysteria2, password: e573635a, sni: www.bing.com, skip-cert-verify: true, udp: true}
@@ -37,6 +39,8 @@ proxy-groups:
     tolerance: 30
     proxies:
       - "[Hysteria2] 🇺🇸 US美国"      
+      - "[Hysteria2] 🇭🇰 HK香港-独享"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup"
       - "[Hysteria2] 🇭🇰 HK香港"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
       - "[Hysteria2] 🇺🇸 US美国-电信"
@@ -72,6 +76,8 @@ proxy-groups:
     interval: 300
     tolerance: 30
     proxies:
+      - "[Hysteria2] 🇭🇰 HK香港-独享"
+      - "[Hysteria2] 🇭🇰 HK香港-Backup"
       - "[Hysteria2] 🇭🇰 HK香港"
       - "[Hysteria2] 🇭🇰 HK香港-Backup1"
   - name: "🇸🇬 新加坡优选"
