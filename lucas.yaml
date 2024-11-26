@@ -1687,12 +1687,12 @@ rules:
   - DOMAIN-SUFFIX,azabu-u.ac.jp,🛑 全球拦截
   - DOMAIN-SUFFIX,couchcoaster.jp,🛑 全球拦截
   - DOMAIN-SUFFIX,delivery.dmkt-sp.jp,🛑 全球拦截
-  - DOMAIN-SUFFIX,ehg-youtube.hitbox.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ehg-youtube.hitbox.com,🚀 节点选择
   - DOMAIN-SUFFIX,nichibenren.or.jp,🛑 全球拦截
   - DOMAIN-SUFFIX,nicorette.co.kr,🛑 全球拦截
-  - DOMAIN-SUFFIX,ssl-youtube.2cnt.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,youtube.112.2o7.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,youtube.2cnt.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,ssl-youtube.2cnt.net,🚀 节点选择
+  - DOMAIN-SUFFIX,youtube.112.2o7.net,🚀 节点选择
+  - DOMAIN-SUFFIX,youtube.2cnt.net,🚀 节点选择
   - DOMAIN-SUFFIX,acsystem.wasu.tv,🛑 全球拦截
   - DOMAIN-SUFFIX,ads.cdn.tvb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ads.wasu.tv,🛑 全球拦截
@@ -2226,6 +2226,11 @@ rules:
   - DOMAIN-KEYWORD,telegram,🚀 节点选择
   - DOMAIN-KEYWORD,twitter,🚀 节点选择
   - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
+  - DOMAIN-SUFFIX,whatsapp.com,🚀 节点选择
+  - DOMAIN-SUFFIX,whatsapp.net,🚀 节点选择
+  - DOMAIN-SUFFIX,whatsapp.biz,🚀 节点选择
+  - DOMAIN,graph.facebook.com,🚀 节点选择
+  - DOMAIN-SUFFIX,bintray.com,🚀 节点选择  
   - DOMAIN-KEYWORD,youtube,🚀 节点选择
   - DOMAIN-SUFFIX,4sqi.net,🚀 节点选择
   - DOMAIN-SUFFIX,a248.e.akamai.net,🚀 节点选择
