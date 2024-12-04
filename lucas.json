@@ -6,7 +6,7 @@
     },
     "experimental": {
         "clash_api": {
-            "external_controller": "0.0.0.0:9095",
+            "external_controller": "192.168.2.2:9095",
             "external_ui": "/etc/sing-box/ui",
             "secret": "",
             "external_ui_download_url": "https://ghp.ci/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
@@ -101,7 +101,7 @@
             "tls": {
                 "enabled": true,
                 "sever_name": "www.bing.com",
-                "insecure": true
+                "insecure": false
             }
         },
         {
@@ -113,7 +113,7 @@
             "tls": {
                 "enabled": true,
                 "sever_name": "www.bing.com",
-                "insecure": true
+                "insecure": false
             }
         },
         {
@@ -125,7 +125,7 @@
             "tls": {
                 "enabled": true,
                 "sever_name": "www.bing.com",
-                "insecure": true
+                "insecure": false
             }
         },
         {
@@ -137,7 +137,7 @@
             "tls": {
                 "enabled": true,
                 "sever_name": "www.bing.com",
-                "insecure": true
+                "insecure": false
             }
         },
         {
@@ -149,7 +149,7 @@
             "tls": {
                 "enabled": true,
                 "sever_name": "www.bing.com",
-                "insecure": true
+                "insecure": false
             }
         },
         {
@@ -161,7 +161,7 @@
             "tls": {
                 "enabled": true,
                 "sever_name": "www.bing.com",
-                "insecure": true
+                "insecure": false
             }
         },
         {
@@ -173,7 +173,7 @@
             "tls": {
                 "enabled": true,
                 "sever_name": "www.bing.com",
-                "insecure": true
+                "insecure": false
             }
         },
         {
@@ -185,7 +185,7 @@
             "tls": {
                 "enabled": true,
                 "sever_name": "totous.ninjavan.top",
-                "insecure": true
+                "insecure": false
             }
         },
         {
