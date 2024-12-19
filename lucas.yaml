@@ -16,7 +16,8 @@ proxies:
   - {name: "[Hysteria2] 🇺🇸 US美国", server: 148.135.23.229, port: 20354, type: hysteria2, password: e58ed911, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇯🇵 JP日本", server: 23.173.216.158, port: 50094, type: hysteria2, password: 5508e658, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] 🇯🇵 JP日本-Backup1", server: 23.173.216.158, port: 37921, type: hysteria2, password: 5508e658, sni: www.bing.com, skip-cert-verify: true, udp: true} 
-  - {name: "[Hysteria2] 🇯🇵 JP日本-AWS", server: 54.248.71.106, port: 24822, type: hysteria2, password: 112cea3b, sni: www.bing.com, skip-cert-verify: true, udp: true}  
+  - {name: "[Hysteria2] 🇰🇷 KR韩国", server: 54.180.24.7, port: 50901, type: hysteria2, password: ed1320f0, sni: www.bing.com, skip-cert-verify: true, udp: true} 
+  - {name: "[Hysteria2] 🇰🇷 KR韩国-Backup1", server: 54.180.24.7, port: 24820, type: hysteria2, password: ed1320f0, sni: www.bing.com, skip-cert-verify: true, udp: true} 
   - {name: "[Hysteria2] 🇭🇰 HK香港", server: 47.243.235.104, port: 48520, type: hysteria2, password: c6bcc4e3, sni: www.bing.com, skip-cert-verify: true, udp: true} 
   - {name: "[Hysteria2] 🇭🇰 HK香港-Backup1", server: 47.243.235.104, port: 16435, type: hysteria2, password: c6bcc4e3, sni: www.bing.com, skip-cert-verify: true, udp: true}   
   - {name: "[Hysteria2] 🇺🇸 US美国-电信", server: 103.182.97.62, port: 15485, type: hysteria2, password: baa5cfb2, sni: totous.ninjavan.top, skip-cert-verify: true, udp: true} 
@@ -32,7 +33,7 @@ proxy-groups:
       - "🇺🇸 美国优选"
       - "🇭🇰 香港优选"
       - "🇯🇵 日本优选"     
-      - "[Hysteria2] 🇯🇵 JP日本-AWS"
+      - "🇰🇷 韩国优选"
   - name: "⛱️ 自动选择"
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -45,14 +46,23 @@ proxy-groups:
       - "[Hysteria2] 🇺🇸 US美国-电信"
       - "[Hysteria2] 🇸🇬 SG新加坡"
       - "[Hysteria2] 🇸🇬 SG新加坡-Backup1"
-      - "[Hysteria2] 🇯🇵 JP日本-AWS"  
+      - "[Hysteria2] 🇰🇷 KR韩国"
+      - "[Hysteria2] 🇰🇷 KR韩国-Backup1" 
   - name: "🤖 ChatGPT"
     type: select
     proxies:
       - "🇸🇬 新加坡优选"      
       - "🇺🇸 美国优选"
-      - "🇭🇰 香港优选"
-      - "🇯🇵 日本优选"
+      - "🇯🇵 日本优选"   
+      - "🇰🇷 韩国优选"
+  - name: "🇰🇷 韩国优选"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
+    proxies:
+      - "[Hysteria2] 🇰🇷 KR韩国"
+      - "[Hysteria2] 🇰🇷 KR韩国-Backup1"   
   - name: "🇯🇵 日本优选"
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -61,7 +71,6 @@ proxy-groups:
     proxies:
       - "[Hysteria2] 🇯🇵 JP日本"
       - "[Hysteria2] 🇯🇵 JP日本-Backup1"
-      - "[Hysteria2] 🇯🇵 JP日本-AWS"    
   - name: "🇺🇸 美国优选"
     type: url-test
     url: http://www.gstatic.com/generate_204
