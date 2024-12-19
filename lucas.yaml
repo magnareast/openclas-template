@@ -27,6 +27,8 @@ proxies:
   - {name: "[Hysteria2] 🇺🇸 US美国-电信", server: 103.182.97.62, port: 15485, type: hysteria2, password: baa5cfb2, sni: totous.ninjavan.top, skip-cert-verify: true, udp: true} 
   - {name: "[Hysteria2] 🇸🇬 SG新加坡", server: 8.219.158.195, port: 27146, type: hysteria2, password: e573635a, sni: www.bing.com, skip-cert-verify: true, udp: true} 
   - {name: "[Hysteria2] 🇸🇬 SG新加坡-Backup1", server: 8.219.158.195, port: 50594, type: hysteria2, password: e573635a, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-AWS", server: 13.215.203.189, port: 58304, type: hysteria2, password: 9b857693, sni: www.bing.com, skip-cert-verify: true, udp: true}  
+  - {name: "[Hysteria2] 🇸🇬 SG新加坡-AWS1", server: 13.215.203.189, port: 11395, type: hysteria2, password: 9b857693, sni: www.bing.com, skip-cert-verify: true, udp: true}   
   
 proxy-groups:
   - name: "🚀 节点选择"
@@ -55,7 +57,9 @@ proxy-groups:
       - "[Hysteria2] 🇭🇰 HK香港-AWS"
       - "[Hysteria2] 🇭🇰 HK香港-AWS1"
       - "[Hysteria2] 🇯🇵 JP日本-AWS"      
-      - "[Hysteria2] 🇯🇵 JP日本-AWS1"      
+      - "[Hysteria2] 🇯🇵 JP日本-AWS1"   
+      - "[Hysteria2] 🇸🇬 SG新加坡-AWS"     
+      - "[Hysteria2] 🇸🇬 SG新加坡-AWS1"
   - name: "🤖 ChatGPT"
     type: select
     proxies:
@@ -108,6 +112,8 @@ proxy-groups:
     proxies:
       - "[Hysteria2] 🇸🇬 SG新加坡"
       - "[Hysteria2] 🇸🇬 SG新加坡-Backup1"
+      - "[Hysteria2] 🇸🇬 SG新加坡-AWS"     
+      - "[Hysteria2] 🇸🇬 SG新加坡-AWS1"     
   - name: "🎯 全球直连"
     type: select
     proxies:
