@@ -1,0 +1,66 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+dns:
+  enable: true
+  ipv6: true
+  respect-rules: true
+  enhanced-mode: fake-ip
+  nameserver:
+    - 114.114.114.114
+    - 8.8.8.8
+    - 223.5.5.5
+    - 180.76.76.76
+    - 119.29.29.29
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 114.114.114.114
+    - 8.8.8.8
+proxies:
+  - name: Claw-HK
+    type: hysteria2
+    server: 47.243.235.104
+    port: 48520
+    password: c6bcc4e3
+    auth: c6bcc4e3
+    sni: www.bing.com
+    udp: true
+    skip-cert-verify: true
+proxy-groups:
+  - type: select
+    name: 🚀 节点选择
+    proxies:
+      - DIRECT
+      - REJECT
+      - ⚡ 自动选择
+      - Claw-HK
+  - name: ⚡ 自动选择
+    type: url-test
+    proxies:
+      - Claw-HK
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - type: select
+    name: 🔍 谷歌服务
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ⚡ 自动选择
+      - Claw-HK
+  - type: select
+    name: 🐟 漏网之鱼
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ⚡ 自动选择
+      - Claw-HK
+rules:
+  - GEOSITE,google,🔍 谷歌服务
+  - GEOIP,google,🔍 谷歌服务
+  - MATCH,🐟 漏网之鱼
